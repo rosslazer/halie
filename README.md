@@ -26,25 +26,19 @@ If you have any questions, please reach out to [Mina Lee](https://minalee.info/)
 
 **Standardized data.** If you simply want to take a look at our data or use it to perform your own analysis, you can find the standardized data for the five tasks in `./assets/std`. See [README](./assets/README.md) for the data format.
 
-**Raw data.** On the other hand, if you want to standardize data from raw data we collected, you can follow the steps below to convert the raw data.
+**Raw data.** On the other hand, if you want to standardize data from raw data we collected (`./assets/raw`), you can follow the steps below to convert the raw data.
 
-For instance, you can find the raw data for question answering in `./assets/raw/question`.
-
-First, unzip the log files for the task you want to standardize:
-
+First, install the required packages:
 ```
-unzip ./assets/raw/question/logs.zip
+pip3 install -r requirements.txt
 ```
 
-Run the following command to standardize the logs:
-
+Then, run the following command to standardize the logs (e.g., for question answering):
 ```
 python3 ./src/run_question.py
 ```
 
-The standardized data will be stored in `./assets/std/question`.
-
-For the other four tasks, replace `question` with the name of the task you want to standardize in the path as well as command.
+The above command reads the raw data at `./assets/raw/question ` and saves the standardized data at `./assets/std/question`. For the other four tasks, replace `question` with the name of the task you want to standardize in the path as well as command.
 
 **Your data.** If you are interested in extending HALIE to support a new task, please create a PR or contact [Mina Lee](https://minalee.info/) at `minalee@stanford.edu`.
 
