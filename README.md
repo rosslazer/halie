@@ -28,15 +28,23 @@ If you have any questions, please reach out to [Mina Lee](https://minalee.info/)
 
 **Raw data.** On the other hand, if you want to standardize data from raw data we collected, you can follow the steps below to convert the raw data.
 
-For social dialogue, you can find the raw data in `./assets/raw/dialogue`. For the other four tasks, replace `dialogue` with the name of the task you want to standardize in the path as well as command.
+For instance, you can find the raw data for question answering in `./assets/raw/question`.
 
-Run the following command to standardize the raw data for social dialogue:
+First, unzip the log files for the task you want to standardize:
 
 ```
-python3 ./src/run_dialogue.py
+unzip ./assets/raw/question/logs.zip
 ```
 
-The standardized data will be stored in `./assets/std/dialogue`.
+Run the following command to standardize the logs:
+
+```
+python3 ./src/run_question.py
+```
+
+The standardized data will be stored in `./assets/std/question`.
+
+For the other four tasks, replace `question` with the name of the task you want to standardize in the path as well as command.
 
 **Your data.** If you are interested in extending HALIE to support a new task, please create a PR or contact [Mina Lee](https://minalee.info/) at `minalee@stanford.edu`.
 
