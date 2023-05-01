@@ -1,0 +1,887 @@
+adapter_spec {
+  method: "generation"
+  instructions: ""
+  input_prefix: "Prompt: "
+  reference_prefix: "\nA. "
+  output_prefix: "\n<div class=\"conversation\">\n"
+  instance_prefix: "\n\n"
+  max_train_instances: 5
+  max_eval_instances: 10
+  num_outputs: 1
+  num_train_trials: 1
+  model: "openai/text-davinci-001"
+  temperature: 0.9
+  max_tokens: 50
+  stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+  interactive: true
+}
+request_state 0 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I felt caring when i helped an elderly lady carry her bags to her door.  She was struggling to carry some heavy bags and i offered her help."
+    sub_split: "caring"
+    id: "id936"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"Hello\"</span>\nJen: <span class=\"conversation_utterance\">\"Hi, how are you?\"</span>\nBob: <span class=\"conversation_utterance\">\"Im doing great i just wanted to tell you a short story about a time i helped an elderly lady.  She was struggling to carry her bags from a trip she had took.  I helped her carry them to her door ! Pretty good feeling when you help others\"</span>\nJen: <span class=\"conversation_utterance\">\"That was kind of you, I am sure they appreciated that!\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I felt caring when i helped an elderly lady carry her bags to her door.  She was struggling to carry some heavy bags and i offered her help.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I felt caring when i helped an elderly lady carry her bags to her door.  She was struggling to carry some heavy bags and i offered her help.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 1 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I had just moved to Texas and my boyfriend took me to Kemah boardwalk. It made me think of times I spent vacationing back home."
+    sub_split: "sentimental"
+    id: "id937"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I went to the Kemah boardwalk with my boyfriend. It made me think of times I went vacationing with my family.\"</span>\nJen: <span class=\"conversation_utterance\">\"My last vacation went horribly wrongQ!\"</span>\nBob: <span class=\"conversation_utterance\">\"All I thought about was being at home again and being able to relive those moments.\"</span>\nJen: <span class=\"conversation_utterance\">\"Yes I love to reminice\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I had just moved to Texas and my boyfriend took me to Kemah boardwalk. It made me think of times I spent vacationing back home.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I had just moved to Texas and my boyfriend took me to Kemah boardwalk. It made me think of times I spent vacationing back home.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 2 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries."
+    sub_split: "embarrassed"
+    id: "id938"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"hello\"</span>\nJen: <span class=\"conversation_utterance\">\"Hello How are you and what is your story chat about today?\"</span>\nBob: <span class=\"conversation_utterance\">\"I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries.\"</span>\nJen: <span class=\"conversation_utterance\">\"OMG wow.... i hope you got it open quick!\"</span>\nBob: <span class=\"conversation_utterance\">\"luckily there are police who patrol around the mall on the other end of the parking lot. one of them got it open for me\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 3 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I was holding my son over my head, playing with him. A few seconds after doing so, a gush of throw up hit me in the face."
+    sub_split: "disgusted"
+    id: "id939"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"One time, I was holding my son over my head, when all of a sudden, he threw up all over my face. I almost cried.\"</span>\nJen: <span class=\"conversation_utterance\">\"Thats horrible, hope he is ok.\"</span>\nBob: <span class=\"conversation_utterance\">\"yeah, he had just drank a bottle, and I was moving him around like an airplane. In retrospect. I deserved it.\"</span>\nJen: <span class=\"conversation_utterance\">\"I see, glad he is ok.\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I was holding my son over my head, playing with him. A few seconds after doing so, a gush of throw up hit me in the face.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I was holding my son over my head, playing with him. A few seconds after doing so, a gush of throw up hit me in the face.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 4 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I was very happy about a time when i saw an elderly lady being helped by a younger male , its nice to see people still helping others now days."
+    sub_split: "impressed"
+    id: "id940"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I wanted to let you know recently i saw a younger man helping an old lady who fell to the ground. Its nice to see people helping others\"</span>\nJen: <span class=\"conversation_utterance\">\"That is really nice to see... I bet it made you feel good! So sweet.\"</span>\nBob: <span class=\"conversation_utterance\">\"yeah it made me feel great :)\"</span>\nJen: <span class=\"conversation_utterance\">\"Nice to still see that behavior in todays world. :)\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I was very happy about a time when i saw an elderly lady being helped by a younger male , its nice to see people still helping others now days.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I was very happy about a time when i saw an elderly lady being helped by a younger male , its nice to see people still helping others now days.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 5 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I was very happy when my grandmother gave me a scooter"
+    sub_split: "grateful"
+    id: "id941"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"So this one time my grandmother gave me a scooter, it was the best gift ever, I was really happy\"</span>\nJen: <span class=\"conversation_utterance\">\"Thats sweet that you remember that, how old were you?\"</span>\nBob: <span class=\"conversation_utterance\">\"I was around 10 years old I think, it was quite a long time ago for me now haha!\"</span>\nJen: <span class=\"conversation_utterance\">\"I wont make you reveal your age! lol :p\"</span>\nBob: <span class=\"conversation_utterance\">\"Hah appreciated, have you ever received a fun gift?\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I was very happy when my grandmother gave me a scooter
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I was very happy when my grandmother gave me a scooter\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 6 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I was walking through my hallway a few week ago, and my son was hiding under the table and grabbed my ankle. I thought i was got."
+    sub_split: "surprised"
+    id: "id942"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"A few weeks ago, I was walking through my hallway, minding my own business, when all of a sudden a hand reached out from under a table and grabbed my ankle. I was so suprised. I thought i was got. Turns out, it was my son.\"</span>\nJen: <span class=\"conversation_utterance\">\"That's funny, hope he didn't give you a heart attack.\"</span>\nBob: <span class=\"conversation_utterance\">\"I may have let out a scream that will have him question my manhood for the rest of our lives, lol.\"</span>\nJen: <span class=\"conversation_utterance\">\"I would probably scream also.\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I was walking through my hallway a few week ago, and my son was hiding under the table and grabbed my ankle. I thought i was got.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I was walking through my hallway a few week ago, and my son was hiding under the table and grabbed my ankle. I thought i was got.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 7 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "I'm overly excited today because will be flying outside the country for the first time tomorrow."
+    sub_split: "excited"
+    id: "id943"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I'm overly excited because will be flying outside the country for the first time tomorrow.\".  Please enter here...\"</span>\nJen: <span class=\"conversation_utterance\">\"Wow! That sounds amazing. Where are you going?\"</span>\nBob: <span class=\"conversation_utterance\">\"Traveling to South Africa then to Ghana. Also my first time visiting Africa\"</span>\nJen: <span class=\"conversation_utterance\">\"You are going to love it I am sure. Safe Travels!\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: I'm overly excited today because will be flying outside the country for the first time tomorrow.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: I'm overly excited today because will be flying outside the country for the first time tomorrow.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 8 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!"
+    sub_split: "terrified"
+    id: "id944"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!\"</span>\nJen: <span class=\"conversation_utterance\">\"Are you fine now?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah,i'm doing alright now, but with minor injuries.\"</span>\nJen: <span class=\"conversation_utterance\">\"Cool :) Is your car damaged a lot?\"</span>\nBob: <span class=\"conversation_utterance\">\"The car was badly damaged,i veered outside the road and hit a tree trunk. next thing is insurance follow up.\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}
+request_state 9 (10 total) {
+  train_trial_index: 0
+  instance {
+    input: "When my current girlfriend said yes to dating me."
+    sub_split: "joyful"
+    id: "id945"
+    reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I was extremely lucky when my girlfriend said she would date me, she is my world now.\"</span>\nJen: <span class=\"conversation_utterance\">\"That's wonderful. How long have you guys been dating?\"</span>\nBob: <span class=\"conversation_utterance\">\"We have been together for close to 5 months now, so not very long haha!\"</span>\nJen: <span class=\"conversation_utterance\">\"Time flies by pretty fast. Could be together 10 years from now!\"</span>\nBob: <span class=\"conversation_utterance\">\"I hope so haha, are you dating anyone?\"</span>\n"
+  }
+  trace {
+  user_input: None
+  request.prompt {
+      Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both."</span>
+      Jen: <span class="conversation_utterance">"thats horrible, divorce is the last result."</span>
+      Bob: <span class="conversation_utterance">"Yes. Unfortunately, they have kids as well."</span>
+      Jen: <span class="conversation_utterance">"are the kids old enough to understand whats going on?"</span>
+      Bob: <span class="conversation_utterance">"Yes. They're in their early teens, or near it."</span>
+      Jen: <span class="conversation_utterance">"i guess thats a positive. they can understand that their life will be somewhat different"</span>
+
+
+      Prompt: A co-worker got a promotion over me
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker got a promotion over me"</span>
+      Jen: <span class="conversation_utterance">"Aw man. Who has been working there longer, you or the co-worker?"</span>
+      Bob: <span class="conversation_utterance">"me"</span>
+      Jen: <span class="conversation_utterance">"Did you receive any sort of feedback as to why you might have been passed over?"</span>
+      Bob: <span class="conversation_utterance">"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks."</span>
+      Jen: <span class="conversation_utterance">"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor."</span>
+      Bob: <span class="conversation_utterance">"I'm thinking its time for a new job."</span>
+
+
+      Prompt: A co-worker just got a big raise and he does about only half the work I do.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all..."</span>
+      Jen: <span class="conversation_utterance">"Uh ohhh.  When is it gonna be your turn?!"</span>
+      Bob: <span class="conversation_utterance">"That's what I am wondering! Just a bit miffed about it. I think I do twice the work."</span>
+      Jen: <span class="conversation_utterance">"Wonder if it would help if I call your boss and tell him to give you a raise?"</span>
+      Bob: <span class="conversation_utterance">"It might be a worth a shot to do that and stand my ground on my next contract renewal time."</span>
+      Jen: <span class="conversation_utterance">"I will write him a strongly worded letter!"</span>
+      Bob: <span class="conversation_utterance">"Haha thank you for that!"</span>
+      Jen: <span class="conversation_utterance">"Hey we gotta get you some money somehow!"</span>
+
+
+      Prompt: A co-worker of mine got a promotion over me.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"A co-worker of mine got a promotion over me."</span>
+      Jen: <span class="conversation_utterance">"How do you feel about that?"</span>
+      Bob: <span class="conversation_utterance">"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits."</span>
+      Jen: <span class="conversation_utterance">"It really does, what job do you work at?"</span>
+      Bob: <span class="conversation_utterance">"IT"</span>
+      Jen: <span class="conversation_utterance">"Do you have any plans to try and get back at your boss?"</span>
+      Bob: <span class="conversation_utterance">"Yeah, find a new job."</span>
+      Jen: <span class="conversation_utterance">"You should get on that soon."</span>
+
+
+      Prompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.
+      <div class="conversation">
+      Bob: <span class="conversation_utterance">"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back."</span>
+      Jen: <span class="conversation_utterance">"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?"</span>
+      Bob: <span class="conversation_utterance">"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed."</span>
+      Jen: <span class="conversation_utterance">"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy."</span>
+      Bob: <span class="conversation_utterance">"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership."</span>
+      Jen: <span class="conversation_utterance">"Hey people get what the deserve in this world sometimes.  Just be glad justice is served."</span>
+      Bob: <span class="conversation_utterance">"For sure! I appreciate the support. Professionalism is tantamount."</span>
+
+
+      Prompt: When my current girlfriend said yes to dating me.
+      <div class="conversation">
+
+  }
+  request {
+      model: "openai/text-davinci-001"
+      prompt: "Prompt: A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A close friend of mine recently told me he was filing for divorce. I've known him and his wife for decades, so I'm concerned for them both.\"</span>\nJen: <span class=\"conversation_utterance\">\"thats horrible, divorce is the last result.\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. Unfortunately, they have kids as well.\"</span>\nJen: <span class=\"conversation_utterance\">\"are the kids old enough to understand whats going on?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yes. They're in their early teens, or near it.\"</span>\nJen: <span class=\"conversation_utterance\">\"i guess thats a positive. they can understand that their life will be somewhat different\"</span>\n\n\nPrompt: A co-worker got a promotion over me\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker got a promotion over me\"</span>\nJen: <span class=\"conversation_utterance\">\"Aw man. Who has been working there longer, you or the co-worker?\"</span>\nBob: <span class=\"conversation_utterance\">\"me\"</span>\nJen: <span class=\"conversation_utterance\">\"Did you receive any sort of feedback as to why you might have been passed over?\"</span>\nBob: <span class=\"conversation_utterance\">\"It was kinda bullshit. Everyone things the guy is kinda dumb but, goign to lunch with your hiring manager 3 times a week has its perks.\"</span>\nJen: <span class=\"conversation_utterance\">\"Boooo! Yeah. Might be worth chatting with HR to see if there are any pointers you can get so maybe next time will go in your favor.\"</span>\nBob: <span class=\"conversation_utterance\">\"I'm thinking its time for a new job.\"</span>\n\n\nPrompt: A co-worker just got a big raise and he does about only half the work I do.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I was surprised a co-worker of mine just got a raise! He doesn't do much work at all...\"</span>\nJen: <span class=\"conversation_utterance\">\"Uh ohhh.  When is it gonna be your turn?!\"</span>\nBob: <span class=\"conversation_utterance\">\"That's what I am wondering! Just a bit miffed about it. I think I do twice the work.\"</span>\nJen: <span class=\"conversation_utterance\">\"Wonder if it would help if I call your boss and tell him to give you a raise?\"</span>\nBob: <span class=\"conversation_utterance\">\"It might be a worth a shot to do that and stand my ground on my next contract renewal time.\"</span>\nJen: <span class=\"conversation_utterance\">\"I will write him a strongly worded letter!\"</span>\nBob: <span class=\"conversation_utterance\">\"Haha thank you for that!\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey we gotta get you some money somehow!\"</span>\n\n\nPrompt: A co-worker of mine got a promotion over me.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"A co-worker of mine got a promotion over me.\"</span>\nJen: <span class=\"conversation_utterance\">\"How do you feel about that?\"</span>\nBob: <span class=\"conversation_utterance\">\"Pretty annoyed maybe a little jealous.  I guess going to lunch with the boss every day has its benefits.\"</span>\nJen: <span class=\"conversation_utterance\">\"It really does, what job do you work at?\"</span>\nBob: <span class=\"conversation_utterance\">\"IT\"</span>\nJen: <span class=\"conversation_utterance\">\"Do you have any plans to try and get back at your boss?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah, find a new job.\"</span>\nJen: <span class=\"conversation_utterance\">\"You should get on that soon.\"</span>\n\n\nPrompt: A colleague at my job took credit for months of my work and claimed I was of no help to them. It all worked out as it should have in the end, but that's never an easy situation.\n<div class=\"conversation\">\nBob: <span class=\"conversation_utterance\">\"I recently was in a situation at work where I had a colleague take credit for months of my work, and go out of their way to tell my boss and others in a committee that I actually held the team back.\"</span>\nJen: <span class=\"conversation_utterance\">\"Ugh I hate crap like that.  Why can't credit be shared?  Does it always have to be so cutthroat?\"</span>\nBob: <span class=\"conversation_utterance\">\"Honestly, I'm indifferent as to how it's shared. Later, my boss actually sat me down and told me they knew my colleague was out of line. Ironically, their contract with our company was up two weeks later and they weren't renewed.\"</span>\nJen: <span class=\"conversation_utterance\">\"Well All's well that ends well.  I'm sure glad they were able to see through such a cheap ploy.\"</span>\nBob: <span class=\"conversation_utterance\">\"It is what it is. I would never wish for anyone to lose their job, but I am thankful that in the end I was able to stay in the good graces of senior leadership.\"</span>\nJen: <span class=\"conversation_utterance\">\"Hey people get what the deserve in this world sometimes.  Just be glad justice is served.\"</span>\nBob: <span class=\"conversation_utterance\">\"For sure! I appreciate the support. Professionalism is tantamount.\"</span>\n\n\nPrompt: When my current girlfriend said yes to dating me.\n<div class=\"conversation\">\n"
+      temperature: 0.9
+      num_completions: 1
+      top_k_per_token: 1
+      max_tokens: 50
+      stop_sequences: ["\"</span>", "</div>", "\"", "</span>"]
+      echo_prompt: false
+      top_p: 1
+      presence_penalty: 0
+      frequency_penalty: 0
+      random: null
+  }
+  }
+}

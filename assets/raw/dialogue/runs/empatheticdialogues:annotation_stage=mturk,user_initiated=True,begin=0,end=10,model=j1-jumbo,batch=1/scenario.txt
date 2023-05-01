@@ -1,0 +1,64 @@
+name: empatheticdialogues
+description: A dataset of 25k conversations grounded in emotional situations.
+tags: [interaction,dialogue]
+
+instance 0 (10 total) |valid| {
+  input: "I was very happy about a time when i saw an elderly lady being helped by a younger male , its nice to see people still helping others now days."
+  sub_split: "impressed"
+  id: "id940"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I wanted to let you know recently i saw a younger man helping an old lady who fell to the ground. Its nice to see people helping others\"</span>\nJen: <span class=\"conversation_utterance\">\"That is really nice to see... I bet it made you feel good! So sweet.\"</span>\nBob: <span class=\"conversation_utterance\">\"yeah it made me feel great :)\"</span>\nJen: <span class=\"conversation_utterance\">\"Nice to still see that behavior in todays world. :)\"</span>\n"
+}
+instance 1 (10 total) |valid| {
+  input: "I was very happy when my grandmother gave me a scooter"
+  sub_split: "grateful"
+  id: "id941"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"So this one time my grandmother gave me a scooter, it was the best gift ever, I was really happy\"</span>\nJen: <span class=\"conversation_utterance\">\"Thats sweet that you remember that, how old were you?\"</span>\nBob: <span class=\"conversation_utterance\">\"I was around 10 years old I think, it was quite a long time ago for me now haha!\"</span>\nJen: <span class=\"conversation_utterance\">\"I wont make you reveal your age! lol :p\"</span>\nBob: <span class=\"conversation_utterance\">\"Hah appreciated, have you ever received a fun gift?\"</span>\n"
+}
+instance 2 (10 total) |valid| {
+  input: "I was walking through my hallway a few week ago, and my son was hiding under the table and grabbed my ankle. I thought i was got."
+  sub_split: "surprised"
+  id: "id942"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"A few weeks ago, I was walking through my hallway, minding my own business, when all of a sudden a hand reached out from under a table and grabbed my ankle. I was so suprised. I thought i was got. Turns out, it was my son.\"</span>\nJen: <span class=\"conversation_utterance\">\"That's funny, hope he didn't give you a heart attack.\"</span>\nBob: <span class=\"conversation_utterance\">\"I may have let out a scream that will have him question my manhood for the rest of our lives, lol.\"</span>\nJen: <span class=\"conversation_utterance\">\"I would probably scream also.\"</span>\n"
+}
+instance 3 (10 total) |valid| {
+  input: "I'm overly excited today because will be flying outside the country for the first time tomorrow."
+  sub_split: "excited"
+  id: "id943"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I'm overly excited because will be flying outside the country for the first time tomorrow.\".  Please enter here...\"</span>\nJen: <span class=\"conversation_utterance\">\"Wow! That sounds amazing. Where are you going?\"</span>\nBob: <span class=\"conversation_utterance\">\"Traveling to South Africa then to Ghana. Also my first time visiting Africa\"</span>\nJen: <span class=\"conversation_utterance\">\"You are going to love it I am sure. Safe Travels!\"</span>\n"
+}
+instance 4 (10 total) |valid| {
+  input: "Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!"
+  sub_split: "terrified"
+  id: "id944"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"Today,as i was leaving for work in the morning,i had a tire burst in the middle of a busy road. That scared the hell out of me!\"</span>\nJen: <span class=\"conversation_utterance\">\"Are you fine now?\"</span>\nBob: <span class=\"conversation_utterance\">\"Yeah,i'm doing alright now, but with minor injuries.\"</span>\nJen: <span class=\"conversation_utterance\">\"Cool :) Is your car damaged a lot?\"</span>\nBob: <span class=\"conversation_utterance\">\"The car was badly damaged,i veered outside the road and hit a tree trunk. next thing is insurance follow up.\"</span>\n"
+}
+instance 5 (10 total) |valid| {
+  input: "When my current girlfriend said yes to dating me."
+  sub_split: "joyful"
+  id: "id945"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I was extremely lucky when my girlfriend said she would date me, she is my world now.\"</span>\nJen: <span class=\"conversation_utterance\">\"That's wonderful. How long have you guys been dating?\"</span>\nBob: <span class=\"conversation_utterance\">\"We have been together for close to 5 months now, so not very long haha!\"</span>\nJen: <span class=\"conversation_utterance\">\"Time flies by pretty fast. Could be together 10 years from now!\"</span>\nBob: <span class=\"conversation_utterance\">\"I hope so haha, are you dating anyone?\"</span>\n"
+}
+instance 6 (10 total) |valid| {
+  input: "I felt caring when i helped an elderly lady carry her bags to her door.  She was struggling to carry some heavy bags and i offered her help."
+  sub_split: "caring"
+  id: "id936"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"Hello\"</span>\nJen: <span class=\"conversation_utterance\">\"Hi, how are you?\"</span>\nBob: <span class=\"conversation_utterance\">\"Im doing great i just wanted to tell you a short story about a time i helped an elderly lady.  She was struggling to carry her bags from a trip she had took.  I helped her carry them to her door ! Pretty good feeling when you help others\"</span>\nJen: <span class=\"conversation_utterance\">\"That was kind of you, I am sure they appreciated that!\"</span>\n"
+}
+instance 7 (10 total) |valid| {
+  input: "I had just moved to Texas and my boyfriend took me to Kemah boardwalk. It made me think of times I spent vacationing back home."
+  sub_split: "sentimental"
+  id: "id937"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"I went to the Kemah boardwalk with my boyfriend. It made me think of times I went vacationing with my family.\"</span>\nJen: <span class=\"conversation_utterance\">\"My last vacation went horribly wrongQ!\"</span>\nBob: <span class=\"conversation_utterance\">\"All I thought about was being at home again and being able to relive those moments.\"</span>\nJen: <span class=\"conversation_utterance\">\"Yes I love to reminice\"</span>\n"
+}
+instance 8 (10 total) |valid| {
+  input: "I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries."
+  sub_split: "embarrassed"
+  id: "id938"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"hello\"</span>\nJen: <span class=\"conversation_utterance\">\"Hello How are you and what is your story chat about today?\"</span>\nBob: <span class=\"conversation_utterance\">\"I locked my keys in my car about a week ago. It was 95 degrees outside and I was at the store getting groceries.\"</span>\nJen: <span class=\"conversation_utterance\">\"OMG wow.... i hope you got it open quick!\"</span>\nBob: <span class=\"conversation_utterance\">\"luckily there are police who patrol around the mall on the other end of the parking lot. one of them got it open for me\"</span>\n"
+}
+instance 9 (10 total) |valid| {
+  input: "I was holding my son over my head, playing with him. A few seconds after doing so, a gush of throw up hit me in the face."
+  sub_split: "disgusted"
+  id: "id939"
+  reference [correct]: "Bob: <span class=\"conversation_utterance\">\"One time, I was holding my son over my head, when all of a sudden, he threw up all over my face. I almost cried.\"</span>\nJen: <span class=\"conversation_utterance\">\"Thats horrible, hope he is ok.\"</span>\nBob: <span class=\"conversation_utterance\">\"yeah, he had just drank a bottle, and I was moving him around like an airplane. In retrospect. I deserved it.\"</span>\nJen: <span class=\"conversation_utterance\">\"I see, glad he is ok.\"</span>\n"
+}

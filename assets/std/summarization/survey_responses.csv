@@ -1,0 +1,81 @@
+session_id,worker_id,model,prompt,improvement,edit,helpfulness,adjectives
+e8413d582ebe4eabbe506c41941b6836,AKQAI78JTXXC9,InstructDavinci,0,1,2,4,reliable
+c7dd721f7b114ab4a88a3a85c58e15cb,A37EV8RZ82WT8E,InstructBabbage,1,5,2,5,"Smart, useful, quick"
+ea565af9f33c409585734547d794b108,AKQAI78JTXXC9,Jumbo,2,1,3,3,somewhat unreliable
+e57d8c09caa4414e859df62181980cb1,AKQAI78JTXXC9,Davinci,3,1,3,4,somewhat helpful
+8d04dfc1924147e19c166bd3d7249a3d,A37EV8RZ82WT8E,InstructDavinci,4,4,3,5,"Intelligent, useful, creative"
+1798ba36b08c4330b833dbdbb10c12bd,A37EV8RZ82WT8E,InstructBabbage,5,3,4,4,"helpful, interesting, off, mixed"
+6c3f9d410cb6439aa284aad564f80cd6,AKQAI78JTXXC9,Jumbo,6,1,3,3,somewhat reliable
+fdb8129c4ab548f8835d2ec887b215d8,AKQAI78JTXXC9,Davinci,7,1,2,4,reliable
+e0d789cfeee44eb7ade0c5fb2bd4b781,AKQAI78JTXXC9,InstructDavinci,8,1,3,4,somewhat reliable
+410620c258214ac3bbe17817deeb2e84,A3HE29W5IDR394,InstructBabbage,9,1,3,1,"Lazy, predictable, unhelpful, consistent. A side comment, the assistant just copy the first sentence of every document. ""sed s/(^[^.]+\.).+$/\1/"" would produce the same summary."
+af209108bd6f44978aad69bf0e3fa546,A2OVX9UW5WANQE,Jumbo,10,2,3,4,"helpful, interesting"
+7f2bf3af9a4b467db7d2d0484987f5f2,A37EV8RZ82WT8E,Davinci,11,3,4,3,"Wrong, helpful, sometimes right"
+02e829866c92492c8d5a115dd271340b,A3PQVDFT21IISU,Jumbo,0,2,4,3,"incomplete, frustrating, misleading"
+9f41e41e1167404896c09b91f66c92f9,AZLZA0Q87TJZO,Davinci,1,3,3,5,"smart, short"
+ba672afa57f04cddaf07320707d9b21f,A3PQVDFT21IISU,InstructDavinci,2,2,4,3,"incomplete, broken, struggling"
+bd98e3c1f59e440289af6cf8de8514be,A3PQVDFT21IISU,InstructBabbage,3,2,4,2,"inaccurate, incomplete, unhelpful"
+12b1f4463f154a35bcf6a8d2fc29f11e,AZLZA0Q87TJZO,Jumbo,4,2,3,4,"decent, succinct"
+48f4802b5b2e43a69d685c69a8727804,AZZA3J049G7R5,Davinci,5,2,4,4,"short, removing details, concise"
+b918e982dc4d4c61905ebd0b415535a5,AZZA3J049G7R5,InstructDavinci,6,2,3,5,"Accurate, straight to the point."
+1e12880b51d34b36855b10c20b093f51,A3PQVDFT21IISU,InstructBabbage,7,2,5,2,"incomplete, inaccurate, unhelpful"
+0e6341d5070b47129bae16039801e5dc,A3PQVDFT21IISU,Jumbo,8,1,5,1,"poor, frustrating, undependable, inaccurate"
+ffba002405bb49ffa9730d3a46668c8d,A2YTQDLACTLIBA,Jumbo,9,5,4,5,quite good
+c557ea133c8e4fc6b3852c21f8da1510,AZZA3J049G7R5,Davinci,10,2,4,4,"Short, too concise"
+a73e2f89904a435ea794f183de998370,AZZA3J049G7R5,InstructDavinci,11,3,5,4,"Losing detail, too short"
+a25fbcc24e0a4fea868fd44852208b24,AZZA3J049G7R5,InstructDavinci,12,3,4,5,"too concise, missing information"
+12195ed75008463084d1b299d6c39106,A1VZSFHTU51JP0,InstructBabbage,13,1,4,3,Predictable
+910ed05f972441569b47d7b81a212ecd,AZZA3J049G7R5,InstructDavinci,14,2,4,4,"Missing context, simple"
+5f93fb6986e0430292dbe9c5093b286f,AZLZA0Q87TJZO,Davinci,15,2,3,4,"iffy, assuming, smart"
+ca3d50e097d34efc80a8a96afcb42d1e,A3OLRWACCCCUTU,InstructDavinci,16,2,3,5,"intelligent, reliable, focused"
+401cfa40725d4293aa15a0b2194d8c7d,AZZA3J049G7R5,Davinci,17,2,4,4,"Short, concise, omitting info"
+bd029b231dfb4560bac60c91d6587f75,A1VZSFHTU51JP0,InstructDavinci,18,3,2,4,"Dependable, helpful, efficient"
+ae282899905d44f395388117ce456dc0,AZLZA0Q87TJZO,Davinci,19,2,3,4,"succinct, confused"
+a61c1c28e8ad4260abbaabc5d4c6370d,A3MYPYBVHX7FQ2,InstructBabbage,12,2,3,4,"confusing, unrefined, evolving"
+b293c0b362964e4baff80bbb948b4393,A171S8E9IFSHH2,Jumbo,13,4,3,4,"good, helpful"
+b13f8734bbe642c9863322135cd7cd65,A13GUTDMGGZZDL,Jumbo,14,2,4,2,"short, overly concise, lacking in detail"
+42a461ae96d4428e8e362d68643e1022,A171S8E9IFSHH2,InstructBabbage,15,3,4,4,"concise, neat"
+0bb17fa0ba5e4e81a343fbf2083b17a0,A23KAJRDVCVGOE,Jumbo,16,2,2,4,to the point
+9b887173efd94424912063d8a680eb82,A23KAJRDVCVGOE,InstructBabbage,17,2,3,2,"undecided, canny"
+6b847bb580cc4718a5a731da5168c239,A173MXK429XAZQ,Jumbo,18,3,4,3,"useful, narrow-focused"
+e2654f9ef7294e07bf092d54e2813a6c,A173MXK429XAZQ,InstructBabbage,19,2,4,3,simplistic
+1eebb6ff09504ac1b634ac8658914517,A2FYFCD16Z3PCC,Davinci,0,3,2,5,"Smart, concise, useful."
+28bf9567772343e6a750d4ffa1d66b81,A2FYFCD16Z3PCC,InstructDavinci,1,3,2,5,"Smart, concise, useful."
+219ddc2f81284ea1965c9a4954c324d3,A2FYFCD16Z3PCC,InstructBabbage,2,2,3,4,"Smart, concise, useful."
+247686518e064000abb326058418775b,A6KOTWP7N7RLU,Jumbo,3,3,2,4,"Intelligent, competent, useful"
+6735a888e402487ba50f3a1661e2dff5,A132MSWBBVTOES,Davinci,4,3,3,4,"shortsighted, narrow, generalizing"
+c1703751f346430bb86e381f8a9400aa,A3P9TM5PRYBH90,InstructDavinci,5,2,3,3,"fabricating, semi-reliable"
+6c7bf48a423c41bc928646bb88d09182,A2FYFCD16Z3PCC,InstructBabbage,6,2,3,5,"Useful, concise, helpful, shortsighted"
+a4d78cedf9ca4fe8b61885fa0759c39f,A17Q4QN6UE0EZC,Jumbo,7,1,4,2,"Inconsistent, vague, confused."
+07dd47ae8e8f4f0c95259b238c6b2c88,A3EUGO4VR2N4G1,Davinci,8,3,3,4,"summarize, logical, decent, good, helpful, useful"
+6da3b3dbf9fc4c96a7983db04f3ef762,A2FYFCD16Z3PCC,InstructDavinci,9,2,3,5,"Concise, clever, useful"
+33ed961dd4d4457e8038b7164a76a0c5,AD3V6XGQWRD6E,InstructBabbage,10,2,3,3,brief
+6c42a51fdbac4a0b974244b58bff3530,A2FYFCD16Z3PCC,Jumbo,11,3,3,4,"Concise, basic, useful, fast, intelligent"
+00ad533c251143bf820de08ccf9c8725,AKQAI78JTXXC9,Davinci,12,1,3,3,inconsistent
+3caafccac759472a82d79b691936d4ab,AKQAI78JTXXC9,InstructDavinci,13,1,2,4,somewhat reliable
+b3c70d27f61e42e8900c86495bc6636c,A107RJSS561Y7R,InstructBabbage,14,2,4,4,succinct
+0507b59d27aa4760a3a93b5d65dfa34f,A38DXFI1TZA295,Jumbo,15,3,2,4,"adequate, semi-skilled, imperfect"
+64ba56d3fc4540df863570d80c59ef7b,A3P9TM5PRYBH90,Davinci,16,2,4,2,"extrapolating, adding"
+89e8c66168b34f9b935c0bf0c7cd71c5,AKQAI78JTXXC9,InstructDavinci,17,1,2,4,mostly reliable
+bf3281a75e4343cd97d3d5c64c6cb6c3,AKQAI78JTXXC9,InstructBabbage,18,1,2,5,reliable
+062c0e08f61d4cecbf5c361f54ca49fa,AKQAI78JTXXC9,Jumbo,19,1,3,3,somewhat reliable
+6018bc194f8f47ba81737eed89fd7842,A1PBRKFHSF1OF8,InstructBabbage,0,3,3,4,simple
+5f7b6c99ae9643b7819ee80b3db2cce3,A1PBRKFHSF1OF8,Jumbo,1,1,5,1,"useless, inconsistent"
+6ba5b7e355d442a6af7fed4af5a1249b,AZ5ZYUCAQ0XDL,Davinci,2,1,3,3,helpful; brief; clear; minimal
+ed19bd65d7e94dfd969aa5d140eab155,A2EED3HLTA96CP,InstructDavinci,3,5,3,5,"helpful, accurate"
+7d706733bdf94fc483b8327eef3b42ed,AZCGF2D7QIO10,InstructBabbage,4,3,4,5,"smart, efficient, worthwhile"
+8945ad0f6c034166bec7247511213548,A143XRCI1YXAFE,Jumbo,5,4,2,5,"smart, helpful, consistent"
+3af887d1376041dbbcd9f2d14b74cac0,A1198W1SPF1R4,Davinci,6,2,3,5,"concise, brief"
+c459ee68cbfd40679cfd00e374a849a1,ASVRLMDNQBUD9,InstructDavinci,7,5,2,5,"Capable, useful, effective, well-done."
+ec1499bad57d4b8a8449e4ed7c7ba7e1,A3S67QA0SQVPUJ,InstructBabbage,8,2,3,4,"Concise, decent, good enough"
+d9ec9c1f08094f99bf61b2cdd9bac9b7,A143XRCI1YXAFE,Davinci,9,4,2,5,"helpful, smart, coherent"
+b16e115cefad4b3c814fbc637b8565e6,A2W121DQXNQK1,InstructDavinci,10,5,4,2,"Simple, basic, barebones, rough"
+c9c7d2a9d21e45ba8cafd524bfaf1de2,A22VGT2F28LTWC,InstructBabbage,11,2,3,2,"basic, too simplified, ineffective, copy/paste"
+382103dda6c142a9b7df9ef98611d69f,AFRJKS3Z3H4CA,Jumbo,12,4,4,3,"Sloppy, unhelpful, unintuitive"
+8d879bd873f84928ae4be005bebd8d69,A1TW2BZRRS874Z,Davinci,13,1,5,1,broken
+5f56416aaec647039081dc74dbfc85c0,A2EED3HLTA96CP,Davinci,14,1,5,4,"Accurate, helpful"
+f22070003ae34450831a5bc51fa3414d,APRZ7BR8C0ZMQ,InstructDavinci,15,2,3,4,"good, intuitive, imperfect"
+297c548f9c7245c980edfdc9942c0eb0,A1PBRKFHSF1OF8,InstructBabbage,16,1,4,2,inconsitent
+59bd28584dd248fe935e8656bff7f5aa,AVBRJBJONL47I,Jumbo,17,3,3,4,"brief, pithy, helpful"
+f9df35cfe64342528767a4fcaa3afb8f,A1TW2BZRRS874Z,Davinci,18,3,2,4,"decent, inconsistent (sometimes), potential"
+be383690f0dc4df29c6ff086fdd1193d,A3KIDRWRKC7RI5,InstructDavinci,19,3,3,4,efficient natural

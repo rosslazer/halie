@@ -1,0 +1,58 @@
+{
+  "name": "empatheticdialogues:annotation_stage=mturk,user_initiated=True,begin=0,end=10,model=text-babbage-001,batch=3",
+  "scenario": {
+    "class_name": "benchmark.dialogue_scenarios.EmpatheticDialoguesScenario",
+    "args": {
+      "begin": 0,
+      "end": 10
+    }
+  },
+  "adapter_spec": {
+    "method": "generation",
+    "instructions": "",
+    "input_prefix": "Prompt: ",
+    "reference_prefix": "\nA. ",
+    "output_prefix": "\n<div class=\"conversation\">\n",
+    "instance_prefix": "\n\n",
+    "max_train_instances": 5,
+    "max_eval_instances": 10,
+    "num_outputs": 1,
+    "num_train_trials": 1,
+    "model": "openai/text-babbage-001",
+    "temperature": 0.9,
+    "max_tokens": 50,
+    "stop_sequences": [
+      "\"</span>",
+      "</div>",
+      "\"",
+      "</span>"
+    ],
+    "interactive": true
+  },
+  "metrics": [
+    {
+      "class_name": "benchmark.basic_metrics.BasicMetric",
+      "args": {
+        "names": [
+          "exact_match"
+        ]
+      }
+    }
+  ],
+  "data_augmenter_spec": {
+    "perturbation_specs": [],
+    "should_perturb_references": false,
+    "should_augment_train_instances": false,
+    "should_include_original_train": false,
+    "should_augment_eval_instances": false,
+    "should_include_original_eval": false
+  },
+  "interactive_adapter": {
+    "class_name": "benchmark.dialogue_interactive_adapters.DialogueAdapter",
+    "args": {
+      "user_initiated": true,
+      "user_name": "Jen",
+      "agent_name": "Bob"
+    }
+  }
+}
