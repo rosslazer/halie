@@ -13,12 +13,19 @@ from utils.name_utils import convert_model_name_coauthor
 class Asset:
     def __init__(self, path: str, verbose: bool = False):
         self.path_raw = path
-
+        self._unzip_logs()
         self.session_ids = self._read_session_ids()
         self.session_id_to_metadata = self._read_session_id_to_metadata()
         self.blocklist = self._read_blocklist()
         self.survey_responses = self._read_survey_responses(verbose)
         self.logs = self._read_logs()
+
+    def _unzip_logs(self):
+        # Unzip logs if necessary
+        path_dir = os.path.join(self.path_raw, 'logs')
+        path_zip = os.path.join(self.path_raw, 'logs.zip')
+        if not os.path.exists(path_dir):
+            os.system(f'unzip {path_zip} -d {self.path_raw}')
 
     def _read_session_ids(self):
         path = os.path.join(self.path_raw, 'session_ids.txt')

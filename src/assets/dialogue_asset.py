@@ -14,6 +14,7 @@ from utils.dialogue_utils import filter_spam_surveys, filter_avg_user_words, fil
 class DialogueAsset(Asset):
     def __init__(self, path_raw: str, verbose: bool = False):
         self.path_raw = path_raw
+        self._unzip_logs()
         self.runs = self._read_runs()
 
         self.session_ids = self._get_session_ids()
@@ -66,6 +67,12 @@ class DialogueAsset(Asset):
         }
         self.logs = [log for log in self.logs if log.session_id in self.session_ids]
         self.survey_responses = [survey for survey in self.survey_responses if survey.session_id in self.session_ids]
+
+    def _unzip_logs(self):
+        path_dir = os.path.join(self.path_raw, 'runs')
+        path_zip = os.path.join(self.path_raw, 'logs.zip')
+        if not os.path.exists(path_dir):
+            os.system(f'unzip {path_zip} -d {self.path_raw}')
 
     def _read_runs(self) -> DataFrame:
         # Read logs from csv if available

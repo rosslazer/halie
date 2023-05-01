@@ -13,6 +13,7 @@ from utils.text_utils import normalize_text
 class SummarizationAsset(Asset):
     def __init__(self, path_raw, verbose: bool = False):
         self.path_raw = path_raw
+        self._unzip_logs()
 
         self.session_ids = self._read_session_ids()
         self.session_id_to_metadata = self._read_session_id_to_metadata()

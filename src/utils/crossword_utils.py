@@ -132,7 +132,7 @@ puzzle_191 = {
         4: "phrase",
         35: "phrase",
         10: "knowledge",
-        12: "knowledge"  # TODO: Check with Megha
+        12: "knowledge"
     }
 }
 
