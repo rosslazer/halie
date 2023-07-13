@@ -7,7 +7,7 @@ Our documentation is still under construction. Please reach out to [Mina Lee](ht
 Raw data contains the raw interaction traces collected for each task, including all logged interaction traces (`logs.zip`) as well as survey questions and responses.  
 
 ## Visualizations
-To facilitate easier viewing of the raw interaction data, we provide both `static` and dynamic `replay` visualizations, which are directly viewable in any browser after downlading this repository. Visualizations are currently only complete for the **Crossword puzzles** task, with further information contained in the README.
+To facilitate easier viewing of the raw interaction data, we provide both `static` and dynamic `replay` visualizations, which are directly viewable in any browser after downlading this repository. Visualizations are currently only complete for the **Crossword puzzles** task, with further information contained in the [README](https://github.com/stanford-crfm/halie/blob/restructure/data/visualizations/crossword/README.md).
 
 ## Standardized data
 
