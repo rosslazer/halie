@@ -59,7 +59,7 @@ def enable_gpt3_access(pid,uid):
   print(f"GPT3 access enabled for {pid}_{uid}")
 
 def check_gpt3_access(pid,uid):
-  if(uid=="1509679a"): #Special permissions for Megha's laptop :) 
+  if(uid=="1509679a"): #Special permissions for Debug's laptop :) 
     return True
   key = (pid,uid)
   if key not in api_server_state or "gpt3_access" not in api_server_state[key]:

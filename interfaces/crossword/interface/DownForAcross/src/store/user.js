@@ -94,7 +94,7 @@ export default class User extends EventEmitter {
   }
 
   markSolved(gid) {
-    console.log(`*** Megha: markSolved()!!!`);
+    console.log(`*** Debug: markSolved()!!!`);
     this.ref
       .child('history')
       .child(gid)

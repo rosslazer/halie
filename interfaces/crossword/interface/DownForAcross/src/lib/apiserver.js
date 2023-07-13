@@ -2,7 +2,7 @@
 // Important: Change url here when moving machines eventually!
 
 export const apiLogMessage = (message) => {
-  console.log(`*** Megha: apiLogMessage: ${message}`);
+  console.log(`*** Debug: apiLogMessage: ${message}`);
   return fetch(`http://143.198.226.165:5000/log?message=${encodeURIComponent(message)}`)
     .then((response) => response.text())
     .then((body) => {
@@ -21,7 +21,7 @@ export const apiAskAI = (query, uid, pid, onChat) => {
   )
     .then((response) => response.text())
     .then((body) => {
-      console.log(`*** Megha: ${body}`);
+      console.log(`*** Debug: ${body}`);
       onChat('AI', uid + '.AI', body);
     })
     .catch((error) => {

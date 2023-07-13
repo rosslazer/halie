@@ -47,7 +47,7 @@ export default class Game extends Component {
     const {pid} = this.rawGame;
     sessionStorage.setItem('current_pid',pid);
     const log_message = `GameInFocus,${id},${pid},${Date.now()}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -62,7 +62,7 @@ export default class Game extends Component {
     const {pid} = this.rawGame;
     sessionStorage.setItem('current_pid',pid);
     const log_message = `GameBlurred,${id},${pid},${Date.now()}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -128,7 +128,7 @@ export default class Game extends Component {
     const {pencilMode} = this.state;
     const {autocheckMode} = this.state;
     const log_message = `CellUpdate,${id},${pid},${Date.now()},${r},${c},${value}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -177,7 +177,7 @@ export default class Game extends Component {
     const {pid} = this.rawGame;
     sessionStorage.setItem('current_pid',pid);
     const log_message = `ResetClock,${id},${pid},${Date.now()}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -194,7 +194,7 @@ export default class Game extends Component {
     sessionStorage.setItem('current_pid',pid);
     const scope = this.scope(scopeString);
     const log_message = `Check,${id},${pid},${Date.now()},${scopeString}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -211,7 +211,7 @@ export default class Game extends Component {
     sessionStorage.setItem('current_pid',pid);
     const scope = this.scope(scopeString);
     const log_message = `Reveal,${id},${pid},${Date.now()},${scopeString}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -229,7 +229,7 @@ export default class Game extends Component {
     sessionStorage.setItem('current_pid',pid);
     const scope = this.scope(scopeString);
     const log_message = `Reset,${id},${pid},${Date.now()},${scopeString}`;
-    console.log('*** Megha: ' + log_message);
+    console.log('*** Debug: ' + log_message);
     const gameState = {
       grid: this.rawGame.grid,
       solution: this.rawGame.solution,
@@ -282,7 +282,7 @@ export default class Game extends Component {
       .getElementsByClassName('clock')[0]
       .innerHTML.replace(/[{()}]/g, '')
       .split(':')[0];
-    console.log('*** Megha: ' + minutes_played);
+    console.log('*** Debug: ' + minutes_played);
     // alert(minutes_played);
     if (parseInt(minutes_played, 10) < 30) {
       alert(`You have only played ${minutes_played} minutes. You must play for 30 minutes - can't quit yet!`);
@@ -294,7 +294,7 @@ export default class Game extends Component {
         const code = Math.floor(Math.random() * 1000000000);
         window.alert(`You are done! Your secret code is ${code}`);
         const log_message = `GiveUp,${id},${pid},${Date.now()},${code}`;
-        console.log('*** Megha: ' + log_message);
+        console.log('*** Debug: ' + log_message);
         const gameState = {
           grid: this.rawGame.grid,
           solution: this.rawGame.solution,
@@ -463,7 +463,7 @@ export default class Game extends Component {
       sessionStorage.setItem('current_pid',pid);
       const code = Math.floor(Math.random() * 1000000000);
       const log_message = `Solved,${id},${pid},${Date.now()},${code}`;
-      console.log('*** Megha: ' + log_message);
+      console.log('*** Debug: ' + log_message);
       const gameState = {
         grid: this.rawGame.grid,
         solution: this.rawGame.solution,

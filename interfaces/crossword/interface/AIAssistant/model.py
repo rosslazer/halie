@@ -9,7 +9,7 @@ from collections import defaultdict
 
 MODELS = ['openai/davinci', 'ai21/j1-jumbo', 'openai/text-davinci-001', 'openai/text-babbage-001']
 STOP_WORDS = loadtxt("stop_words.txt", delimiter="\n", unpack=False, dtype=str)
-API_KEY="7wNfScdl2TderXMw6VH7zGGrgutZO9VR"
+API_KEY="null"
 
 #Process access code csv for decoding parameters
 access_code_dict = defaultdict(lambda: defaultdict(list))
@@ -29,7 +29,7 @@ print(access_code_dict)
 auth = Authentication(api_key=API_KEY)
 service = RemoteService("https://crfm-models.stanford.edu")
 account: Account = service.get_account(auth)
-print("CURRENT GPT-3 TOKEN USAGE: "+str(account.usages['gpt3']['monthly']))
+print("CURRENT OKEN USAGE: "+str(account.usages['gpt3']['monthly']))
 print(account.usages)
 
 
@@ -53,9 +53,7 @@ def send_model_request(prompt, access_code):
 	response = str(request_result.completions[0].text)
 	response = response.replace("\n"," ")
 	response = response.replace(","," ,")
-	#print(set(response.lower().split(" ")))
 	num_stop_words = len(set(response.lower().split(" "))&set(STOP_WORDS))
-	#print(num_stop_words)
 	if(num_stop_words > 0):
 		with open("toxic_outputs.txt", "a") as toxic_file:
 			toxic_file.write("\n New Toxic Output For Model : "+access_code_dict[access_code]["model"]+"\n")

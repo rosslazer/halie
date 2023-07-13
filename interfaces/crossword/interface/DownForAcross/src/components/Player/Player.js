@@ -255,7 +255,7 @@ export default class Player extends Component {
         const pid = sessionStorage.getItem('current_pid');
         const log_message = `NewClueSelected,${id},${pid},${Date.now()},${number},${direction}`;
         console.log(this);
-        console.log('*** Megha: ' + log_message);
+        console.log('*** Debug: ' + log_message);
         const gameState = {
           grid: this.props.grid,
           solution: this.props.solution,

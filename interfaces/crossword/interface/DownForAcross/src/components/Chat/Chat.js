@@ -55,7 +55,7 @@ export default class Chat extends Component {
     this.props.onChat(username, id, message);
     this.props.onChat('AI', id + '.AI', message_array[Math.floor(Math.random() * message_array.length)]);
     apiAskAI(message, id, pid, this.props.onChat);
-    console.log(`*** Megha: Ask,${id},${pid},${Date.now()},${message}`);
+    console.log(`*** Debug: Ask,${id},${pid},${Date.now()},${message}`);
     localStorage.setItem(this.usernameKey, username);
   };
 
