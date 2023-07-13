@@ -2,9 +2,16 @@
 
 Our documentation is still under construction. Please reach out to [Mina Lee](https://minalee.info/) at `minalee@stanford.edu` if you have any question or suggestion for improvement.
 
+
+## Raw data
+Raw data contains the raw interaction traces collected for each task, including all logged interaction traces (`logs.zip`) as well as survey questions and responses.  
+
+## Visualizations
+To facilitate easier viewing of the raw interaction data, we provide both `static` and dynamic `replay` visualizations, which are directly viewable in any browser after downlading this repository. Visualizations are currently only complete for the **Crossword puzzles** task, with further information contained in the README.
+
 ## Standardized data
 
-Based on the raw data we collected, we standardized the data for each task to facilitate the analysis of events between humans and LMs across hundreds of interaction sessions.
+To faciliate the analysis of events between humans and LMs across hundreds of interaction sessions, we standardize the data for each task to based on the raw data we collected.
 Each task has `event_blocks.csv` and `survey_responses.csv` as well as a few extra files depending on the task.
 
 **Event blocks.** The `event_blocks.csv` file contains the event blocks (i.e., a sequence of events of our interest) that occurred during interaction. The definition of an event block varies by task. Here is how we defined event blocks for each task:
