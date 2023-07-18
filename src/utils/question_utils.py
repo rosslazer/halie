@@ -40,10 +40,10 @@ category_map = {
 }
 category_map = {vi: k for k, v in category_map.items() for vi in v}
 
-path_sequence = '/Users/minalee/Research/writingwithai/public/assets/raw/question/sequences.txt'
+path_sequence = 'data/raw/question/sequences.txt'
 sequences = pd.read_csv(path_sequence)
 
-path_question = '/Users/minalee/Research/writingwithai/public/assets/raw/question/questions.csv'
+path_question = 'data/raw/question/questions.csv'
 questions = pd.read_csv(path_question)
 
 question_start_words = ["who", "what", "where", "how", "which", "why", "when", "whose", "do", "does", "did", "can", "could", "has", "have", "is", "was", "are", "were", "should", "what's", "whats"]
